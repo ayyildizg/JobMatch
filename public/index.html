@@ -1,43 +1,252 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JobMatch Работодатель</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+          margin: 0 auto;
+          padding: 20px;
+          max-width: 800px;
+        }
+        .form {
+          display: grid;
+          gap: 15px;
+          margin-bottom: 30px;
+        }
+        .form input, .form select, .form button {
+          padding: 10px;
+          font-size: 16px;
+          border: 1px solid #ddd;
+          border-radius: 4px;
+        }
+        .form button {
+          background-color: #4CAF50;
+          color: white;
+          cursor: pointer;
+          border: none;
+        }
+        .job-list {
+          margin-top: 30px;
+        }
+        .job-item {
+          border: 1px solid #eee;
+          padding: 15px;
+          margin-bottom: 15px;
+          border-radius: 5px;
+          background-color: #f9f9f9;
+        }
+        @media (max-width: 600px) {
+          body {
+            padding: 10px;
+          }
+          .form input, .form select, .form button {
+            font-size: 14px;
+          }
+        }
+    </style>
+</head>
+<body>
+<div id="root"></div>
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+<script type="text/babel">
+    const { useState, useEffect } = React;
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+    const TEXTS = {
+      TITLE: "JobMatch - Панель работодателя",
+      ADD_JOB: "Добавить вакансию",
+      JOB_TITLE: "Название вакансии",
+      COMPANY: "Компания",
+      LOCATION: "Местоположение",
+      SALARY: "Зарплата",
+      STATUS: "Статус",
+      PENDING: "На рассмотрении",
+      COMPLETED: "Завершено",
+      SUBMIT: "Отправить",
+      JOB_LIST: "Список вакансий",
+      LOADING: "Загрузка...",
+      ERROR: "Ошибка"
+    };
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+    const JobForm = ({ onAddJob, isLoading }) => {
+      const [formData, setFormData] = useState({
+        title: '',
+        company: '',
+        location: '',
+        salary: '',
+        status: 'pending'
+      });
+
+      const handleSubmit = (e) => {
+        e.preventDefault();
+        onAddJob(formData);
+      };
+
+      return (
+        <form className="form" onSubmit={handleSubmit}>
+          <h2>{TEXTS.ADD_JOB}</h2>
+          <input
+            type="text"
+            name="title"
+            value={formData.title}
+            onChange={(e) => setFormData({...formData, title: e.target.value})}
+            placeholder={TEXTS.JOB_TITLE}
+            required
+            disabled={isLoading}
+          />
+          <input
+            type="text"
+            name="company"
+            value={formData.company}
+            onChange={(e) => setFormData({...formData, company: e.target.value})}
+            placeholder={TEXTS.COMPANY}
+            required
+            disabled={isLoading}
+          />
+          <input
+            type="text"
+            name="location"
+            value={formData.location}
+            onChange={(e) => setFormData({...formData, location: e.target.value})}
+            placeholder={TEXTS.LOCATION}
+            required
+            disabled={isLoading}
+          />
+          <input
+            type="text"
+            name="salary"
+            value={formData.salary}
+            onChange={(e) => setFormData({...formData, salary: e.target.value})}
+            placeholder={TEXTS.SALARY}
+            disabled={isLoading}
+          />
+          <select
+            name="status"
+            value={formData.status}
+            onChange={(e) => setFormData({...formData, status: e.target.value})}
+            disabled={isLoading}
+          >
+            <option value="pending">{TEXTS.PENDING}</option>
+            <option value="completed">{TEXTS.COMPLETED}</option>
+          </select>
+          <button type="submit" disabled={isLoading}>
+            {isLoading ? TEXTS.LOADING : TEXTS.SUBMIT}
+          </button>
+        </form>
+      );
+    };
+
+    const JobList = ({ jobs }) => {
+      return (
+        <div className="job-list">
+          <h2>{TEXTS.JOB_LIST}</h2>
+          {jobs.length === 0 ? (
+            <p>Нет вакансий</p>
+          ) : (
+            jobs.map((job, index) => (
+              <div key={index} className="job-item">
+                <h3>{job.title}</h3>
+                <p><strong>{TEXTS.COMPANY}:</strong> {job.company}</p>
+                <p><strong>{TEXTS.LOCATION}:</strong> {job.location}</p>
+                <p><strong>{TEXTS.SALARY}:</strong> {job.salary || "Не указана"}</p>
+                <p><strong>{TEXTS.STATUS}:</strong> {job.status === 'pending' ? TEXTS.PENDING : TEXTS.COMPLETED}</p>
+              </div>
+            ))
+          )}
+        </div>
+      );
+    };
+
+    const App = () => {
+      const [jobs, setJobs] = useState([]);
+      const [isLoading, setIsLoading] = useState(false);
+      const [error, setError] = useState(null);
+
+      // İlk yüklemede verileri çek
+      useEffect(() => {
+        fetchJobs();
+      }, []);
+
+      const fetchJobs = async () => {
+        setIsLoading(true);
+        try {
+          const response = await fetch("http://localhost:8000/shifts", {
+            headers: {
+              "Authorization": "Bearer " + localStorage.getItem("access_token")
+            }
+          });
+          if (response.ok) {
+            const data = await response.json();
+            setJobs(data.map(job => ({
+              title: job.required_skills?.join(" ") || "Не указано",
+              company: "JobMatch",
+              location: job.location,
+              salary: job.salary || "Не указана",
+              status: "pending"
+            })));
+          } else {
+            throw new Error(await response.text());
+          }
+        } catch (err) {
+          setError(err.message);
+          console.error("Ошибка загрузки:", err);
+        } finally {
+          setIsLoading(false);
+        }
+      };
+
+      const handleAddJob = async (newJob) => {
+        setIsLoading(true);
+        try {
+          const response = await fetch("http://localhost:8000/shifts", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+              "Authorization": "Bearer " + localStorage.getItem("access_token")
+            },
+            body: JSON.stringify({
+              date: new Date().toISOString().split('T')[0],
+              time_start: "09:00:00",
+              time_end: "17:00:00",
+              location: newJob.location,
+              required_skills: newJob.title.split(" "),
+              salary: newJob.salary
+            })
+          });
+
+          if (response.ok) {
+            await fetchJobs(); // Yeniden verileri çek
+          } else {
+            throw new Error(await response.text());
+          }
+        } catch (err) {
+          setError(err.message);
+          alert(TEXTS.ERROR + ": " + err.message);
+        } finally {
+          setIsLoading(false);
+        }
+      };
+
+      return (
+        <div>
+          <h1>{TEXTS.TITLE}</h1>
+          {error && <p style={{ color: 'red' }}>{error}</p>}
+          <JobForm onAddJob={handleAddJob} isLoading={isLoading} />
+          {isLoading && jobs.length === 0 ? (
+            <p>{TEXTS.LOADING}</p>
+          ) : (
+            <JobList jobs={jobs} />
+          )}
+        </div>
+      );
+    };
+
+    ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+</script>
+</body>
 </html>

@@ -1,0 +1,460 @@
+[debug] [2025-07-23T21:28:04.611Z] ----------------------------------------------------------------------
+[debug] [2025-07-23T21:28:04.617Z] Command:       /usr/local/bin/node /usr/local/bin/firebase emulators:start --only functions
+[debug] [2025-07-23T21:28:04.617Z] CLI Version:   14.11.1
+[debug] [2025-07-23T21:28:04.618Z] Platform:      darwin
+[debug] [2025-07-23T21:28:04.618Z] Node Version:  v22.17.0
+[debug] [2025-07-23T21:28:04.619Z] Time:          Thu Jul 24 2025 00:28:04 GMT+0300 (GMT+03:00)
+[debug] [2025-07-23T21:28:04.619Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-07-23T21:28:05.160Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-07-23T21:28:05.161Z] > authorizing via signed-in user (gulinayyildiz@gmail.com)
+[info] i  emulators: Starting emulators: functions {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions"}}
+[debug] [2025-07-23T21:28:06.456Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-07-23T21:28:06.457Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2025-07-23T21:28:06.466Z] [hub] writing locator at /var/folders/jd/k53k5nc91w139fg3vgcb9yhh0000gn/T/hub-jobmatch-176a7.json
+[debug] [2025-07-23T21:28:07.666Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-07-23T21:28:07.666Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-07-23T21:28:07.667Z] [tasks] Cloud Tasks Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-07-23T21:28:07.667Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}],"tasks":[{"address":"127.0.0.1","family":"IPv4","port":9499}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[warn] ⚠  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: apphosting, auth, firestore, database, hosting, pubsub, storage, dataconnect {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mapphosting, auth, firestore, database, hosting, pubsub, storage, dataconnect\u001b[22m"}}
+[debug] [2025-07-23T21:28:07.712Z] defaultcredentials: writing to file /Users/mac/.config/firebase/gulinayyildiz_gmail_com_application_default_credentials.json
+[debug] [2025-07-23T21:28:07.715Z] Setting GAC to /Users/mac/.config/firebase/gulinayyildiz_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to /Users/mac/.config/firebase/gulinayyildiz_gmail_com_application_default_credentials.json"}}
+[debug] [2025-07-23T21:28:07.716Z] Checked if tokens are valid: true, expires at: 1753309575858
+[debug] [2025-07-23T21:28:07.717Z] Checked if tokens are valid: true, expires at: 1753309575858
+[debug] [2025-07-23T21:28:07.718Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/jobmatch-176a7/adminSdkConfig [none]
+[debug] [2025-07-23T21:28:11.145Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/jobmatch-176a7/adminSdkConfig 200
+[debug] [2025-07-23T21:28:11.146Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/jobmatch-176a7/adminSdkConfig {"projectId":"jobmatch-176a7","storageBucket":"jobmatch-176a7.firebasestorage.app"}
+[info] i  ui: downloading ui-v1.15.0.zip... {"metadata":{"emulator":{"name":"ui"},"message":"downloading ui-v1.15.0.zip..."}}
+[debug] [2025-07-23T21:28:11.202Z] >>> [apiv2][query] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.15.0.zip 
+[debug] [2025-07-23T21:28:12.018Z] <<< [apiv2][status] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.15.0.zip 200
+[debug] [2025-07-23T21:28:12.018Z] <<< [apiv2][body] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.15.0.zip [stream]
+[debug] [2025-07-23T21:28:18.830Z] Data is 3538469
+[debug] [2025-07-23T21:28:18.831Z] [unzip] Entry: client/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2025-07-23T21:28:18.831Z] [unzip] Processing entry: client/
+[debug] [2025-07-23T21:28:18.831Z] [unzip] mkdir: /Users/mac/.cache/firebase/emulators/ui-v1.15.0/client/
+[debug] [2025-07-23T21:28:18.832Z] [unzip] Entry: client/favicon-16x16.png (compressed_size=293 bytes, uncompressed_size=293 bytes)
+[debug] [2025-07-23T21:28:18.832Z] [unzip] Processing entry: client/favicon-16x16.png
+[debug] [2025-07-23T21:28:18.832Z] [unzip] else mkdir: /Users/mac/.cache/firebase/emulators/ui-v1.15.0/client
+[debug] [2025-07-23T21:28:18.832Z] [unzip] Writing file: /Users/mac/.cache/firebase/emulators/ui-v1.15.0/client/favicon-16x16.png
+[debug] [2025-07-23T21:28:18.835Z] [unzip] Entry: client/safari-pinned-tab.svg (compressed_size=1433 bytes, uncompressed_size=2611 bytes)
+[debug] [2025-07-23T21:28:18.836Z] [unzip] Processing entry: client/safari-pinned-tab.svg
+[debug] [2025-07-23T21:28:18.836Z] [unzip] else mkdir: /Users/mac/.cache/firebase/emulators/ui-v1.15.0/client
+[debug] [2025-07-23T21:28:18.836Z] [unzip] deflating: /Users/mac/.cache/firebase/emulators/ui-v1.15.0/client/safari-pinned-tab.svg
+[debug] [2025-07-23T21:28:18.842Z] [unzip] Entry: client/favicon.ico (compressed_size=2933 bytes, uncompressed_size=13294 bytes)
+[debug] [2025-07-23T21:28:18.843Z] [unzip] Processing entry: client/favicon.ico
+[debug] [2025-07-23T21:28:18.843Z] [unzip] else mkdir: /Users/mac/.cache/firebase/emulators/ui-v1.15.0/client
+[debug] [2025-07-23T21:28:18.843Z] [unzip] deflating: /Users/mac/.cache/firebase/emulators/ui-v1.15.0/client/favicon.ico
+[debug] [2025-07-23T21:28:18.846Z] [unzip] Entry: client/index.html (compressed_size=1364 bytes, uncompressed_size=3071 bytes)
+[debug] [2025-07-23T21:28:18.846Z] [unzip] Processing entry: client/index.html
+[debug] [2025-07-23T21:28:18.846Z] [unzip] else mkdir: /Users/mac/.cache/firebase/emulators/ui-v1.15.0/client
+[debug] [2025-07-23T21:28:18.846Z] [unzip] deflating: /Users/mac/.cache/firebase/emulators/ui-v1.15.0/client/index.html
+[debug] [2025-07-23T21:28:18.848Z] [unzip] Entry: client/android-chrome-192x192.png (compressed_size=2684 bytes, uncompressed_size=2684 bytes)
+[debug] [2025-07-23T21:28:18.849Z] [unzip] Processing entry: client/android-chrome-192x192.png
+[debug] [2025-07-23T21:28:18.849Z] [unzip] else mkdir: /Users/mac/.cache/firebase/emulators/ui-v1.15.0/client
+[debug] [2025-07-23T21:28:18.849Z] [unzip] Writing file: /Users/mac/.cache/firebase/emulators/ui-v1.15.0/client/android-chrome-192x192.png
+[debug] [2025-07-23T21:28:18.850Z] [unzip] Entry: client/apple-touch-icon.png (compressed_size=2123 bytes, uncompressed_size=2152 bytes)
+[debug] [2025-07-23T21:28:18.850Z] [unzip] Processing entry: client/apple-touch-icon.png
+[debug] [2025-07-23T21:28:18.850Z] [unzip] else mkdir: /Users/mac/.cache/firebase/emulators/ui-v1.15.0/client
+[debug] [2025-07-23T21:28:18.850Z] [unzip] deflating: /Users/mac/.cache/firebase/emulators/ui-v1.15.0/client/apple-touch-icon.png
+[debug] [2025-07-23T21:28:18.852Z] [unzip] Entry: client/android-chrome-512x512.png (compressed_size=5369 bytes, uncompressed_size=5411 bytes)
+[debug] [2025-07-23T21:28:18.852Z] [unzip] Processing entry: client/android-chrome-512x512.png
+[debug] [2025-07-23T21:28:18.852Z] [unzip] else mkdir: /Users/mac/.cache/firebase/emulators/ui-v1.15.0/client
+[debug] [2025-07-23T21:28:18.853Z] [unzip] deflating: /Users/mac/.cache/firebase/emulators/ui-v1.15.0/client/android-chrome-512x512.png
+[debug] [2025-07-23T21:28:18.855Z] [unzip] Entry: client/manifest.json (compressed_size=245 bytes, uncompressed_size=551 bytes)
+[debug] [2025-07-23T21:28:18.855Z] [unzip] Processing entry: client/manifest.json
+[debug] [2025-07-23T21:28:18.855Z] [unzip] else mkdir: /Users/mac/.cache/firebase/emulators/ui-v1.15.0/client
+[debug] [2025-07-23T21:28:18.855Z] [unzip] deflating: /Users/mac/.cache/firebase/emulators/ui-v1.15.0/client/manifest.json
+[debug] [2025-07-23T21:28:18.857Z] [unzip] Entry: client/robots.txt (compressed_size=26 bytes, uncompressed_size=26 bytes)
+[debug] [2025-07-23T21:28:18.857Z] [unzip] Processing entry: client/robots.txt
+[debug] [2025-07-23T21:28:18.857Z] [unzip] else mkdir: /Users/mac/.cache/firebase/emulators/ui-v1.15.0/client
+[debug] [2025-07-23T21:28:18.858Z] [unzip] Writing file: /Users/mac/.cache/firebase/emulators/ui-v1.15.0/client/robots.txt
+[debug] [2025-07-23T21:28:18.859Z] [unzip] Entry: client/mstile-150x150.png (compressed_size=2034 bytes, uncompressed_size=2034 bytes)
+[debug] [2025-07-23T21:28:18.859Z] [unzip] Processing entry: client/mstile-150x150.png
+[debug] [2025-07-23T21:28:18.859Z] [unzip] else mkdir: /Users/mac/.cache/firebase/emulators/ui-v1.15.0/client
+[debug] [2025-07-23T21:28:18.859Z] [unzip] Writing file: /Users/mac/.cache/firebase/emulators/ui-v1.15.0/client/mstile-150x150.png
+[debug] [2025-07-23T21:28:18.860Z] [unzip] Entry: client/assets/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2025-07-23T21:28:18.860Z] [unzip] Processing entry: client/assets/
+[debug] [2025-07-23T21:28:18.860Z] [unzip] mkdir: /Users/mac/.cache/firebase/emulators/ui-v1.15.0/client/assets/
+[debug] [2025-07-23T21:28:18.861Z] [unzip] Entry: client/assets/index-BX-A56oj.js (compressed_size=582089 bytes, uncompressed_size=2092775 bytes)
+[debug] [2025-07-23T21:28:18.861Z] [unzip] Processing entry: client/assets/index-BX-A56oj.js
+[debug] [2025-07-23T21:28:18.861Z] [unzip] else mkdir: /Users/mac/.cache/firebase/emulators/ui-v1.15.0/client/assets
+[debug] [2025-07-23T21:28:18.861Z] [unzip] deflating: /Users/mac/.cache/firebase/emulators/ui-v1.15.0/client/assets/index-BX-A56oj.js
+[debug] [2025-07-23T21:28:18.887Z] [unzip] Entry: client/assets/index-CjB9C900.css (compressed_size=35979 bytes, uncompressed_size=298654 bytes)
+[debug] [2025-07-23T21:28:18.888Z] [unzip] Processing entry: client/assets/index-CjB9C900.css
+[debug] [2025-07-23T21:28:18.888Z] [unzip] else mkdir: /Users/mac/.cache/firebase/emulators/ui-v1.15.0/client/assets
+[debug] [2025-07-23T21:28:18.888Z] [unzip] deflating: /Users/mac/.cache/firebase/emulators/ui-v1.15.0/client/assets/index-CjB9C900.css
+[debug] [2025-07-23T21:28:18.892Z] [unzip] Entry: client/assets/index-BX-A56oj.js.map (compressed_size=2362482 bytes, uncompressed_size=10036679 bytes)
+[debug] [2025-07-23T21:28:18.893Z] [unzip] Processing entry: client/assets/index-BX-A56oj.js.map
+[debug] [2025-07-23T21:28:18.893Z] [unzip] else mkdir: /Users/mac/.cache/firebase/emulators/ui-v1.15.0/client/assets
+[debug] [2025-07-23T21:28:18.893Z] [unzip] deflating: /Users/mac/.cache/firebase/emulators/ui-v1.15.0/client/assets/index-BX-A56oj.js.map
+[debug] [2025-07-23T21:28:19.005Z] [unzip] Entry: client/assets/extensions/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2025-07-23T21:28:19.005Z] [unzip] Processing entry: client/assets/extensions/
+[debug] [2025-07-23T21:28:19.005Z] [unzip] mkdir: /Users/mac/.cache/firebase/emulators/ui-v1.15.0/client/assets/extensions/
+[debug] [2025-07-23T21:28:19.005Z] [unzip] Entry: client/assets/extensions/default-extension.png (compressed_size=1646 bytes, uncompressed_size=1657 bytes)
+[debug] [2025-07-23T21:28:19.005Z] [unzip] Processing entry: client/assets/extensions/default-extension.png
+[debug] [2025-07-23T21:28:19.006Z] [unzip] else mkdir: /Users/mac/.cache/firebase/emulators/ui-v1.15.0/client/assets/extensions
+[debug] [2025-07-23T21:28:19.006Z] [unzip] deflating: /Users/mac/.cache/firebase/emulators/ui-v1.15.0/client/assets/extensions/default-extension.png
+[debug] [2025-07-23T21:28:19.008Z] [unzip] Entry: client/assets/img/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2025-07-23T21:28:19.008Z] [unzip] Processing entry: client/assets/img/
+[debug] [2025-07-23T21:28:19.008Z] [unzip] mkdir: /Users/mac/.cache/firebase/emulators/ui-v1.15.0/client/assets/img/
+[debug] [2025-07-23T21:28:19.008Z] [unzip] Entry: client/assets/img/database.png (compressed_size=29449 bytes, uncompressed_size=29988 bytes)
+[debug] [2025-07-23T21:28:19.008Z] [unzip] Processing entry: client/assets/img/database.png
+[debug] [2025-07-23T21:28:19.008Z] [unzip] else mkdir: /Users/mac/.cache/firebase/emulators/ui-v1.15.0/client/assets/img
+[debug] [2025-07-23T21:28:19.009Z] [unzip] deflating: /Users/mac/.cache/firebase/emulators/ui-v1.15.0/client/assets/img/database.png
+[debug] [2025-07-23T21:28:19.010Z] [unzip] Entry: client/assets/provider-icons/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2025-07-23T21:28:19.011Z] [unzip] Processing entry: client/assets/provider-icons/
+[debug] [2025-07-23T21:28:19.011Z] [unzip] mkdir: /Users/mac/.cache/firebase/emulators/ui-v1.15.0/client/assets/provider-icons/
+[debug] [2025-07-23T21:28:19.011Z] [unzip] Entry: client/assets/provider-icons/auth_service_saml.svg (compressed_size=575 bytes, uncompressed_size=1226 bytes)
+[debug] [2025-07-23T21:28:19.011Z] [unzip] Processing entry: client/assets/provider-icons/auth_service_saml.svg
+[debug] [2025-07-23T21:28:19.011Z] [unzip] else mkdir: /Users/mac/.cache/firebase/emulators/ui-v1.15.0/client/assets/provider-icons
+[debug] [2025-07-23T21:28:19.012Z] [unzip] deflating: /Users/mac/.cache/firebase/emulators/ui-v1.15.0/client/assets/provider-icons/auth_service_saml.svg
+[debug] [2025-07-23T21:28:19.013Z] [unzip] Entry: client/assets/provider-icons/auth_service_phone.svg (compressed_size=261 bytes, uncompressed_size=414 bytes)
+[debug] [2025-07-23T21:28:19.013Z] [unzip] Processing entry: client/assets/provider-icons/auth_service_phone.svg
+[debug] [2025-07-23T21:28:19.013Z] [unzip] else mkdir: /Users/mac/.cache/firebase/emulators/ui-v1.15.0/client/assets/provider-icons
+[debug] [2025-07-23T21:28:19.013Z] [unzip] deflating: /Users/mac/.cache/firebase/emulators/ui-v1.15.0/client/assets/provider-icons/auth_service_phone.svg
+[debug] [2025-07-23T21:28:19.015Z] [unzip] Entry: client/assets/provider-icons/auth_service_facebook.svg (compressed_size=289 bytes, uncompressed_size=457 bytes)
+[debug] [2025-07-23T21:28:19.015Z] [unzip] Processing entry: client/assets/provider-icons/auth_service_facebook.svg
+[debug] [2025-07-23T21:28:19.015Z] [unzip] else mkdir: /Users/mac/.cache/firebase/emulators/ui-v1.15.0/client/assets/provider-icons
+[debug] [2025-07-23T21:28:19.016Z] [unzip] deflating: /Users/mac/.cache/firebase/emulators/ui-v1.15.0/client/assets/provider-icons/auth_service_facebook.svg
+[debug] [2025-07-23T21:28:19.017Z] [unzip] Entry: client/assets/provider-icons/auth_service_game_center.svg (compressed_size=991 bytes, uncompressed_size=3921 bytes)
+[debug] [2025-07-23T21:28:19.017Z] [unzip] Processing entry: client/assets/provider-icons/auth_service_game_center.svg
+[debug] [2025-07-23T21:28:19.017Z] [unzip] else mkdir: /Users/mac/.cache/firebase/emulators/ui-v1.15.0/client/assets/provider-icons
+[debug] [2025-07-23T21:28:19.018Z] [unzip] deflating: /Users/mac/.cache/firebase/emulators/ui-v1.15.0/client/assets/provider-icons/auth_service_game_center.svg
+[debug] [2025-07-23T21:28:19.019Z] [unzip] Entry: client/assets/provider-icons/auth_service_apple.svg (compressed_size=230 bytes, uncompressed_size=334 bytes)
+[debug] [2025-07-23T21:28:19.019Z] [unzip] Processing entry: client/assets/provider-icons/auth_service_apple.svg
+[debug] [2025-07-23T21:28:19.019Z] [unzip] else mkdir: /Users/mac/.cache/firebase/emulators/ui-v1.15.0/client/assets/provider-icons
+[debug] [2025-07-23T21:28:19.020Z] [unzip] deflating: /Users/mac/.cache/firebase/emulators/ui-v1.15.0/client/assets/provider-icons/auth_service_apple.svg
+[debug] [2025-07-23T21:28:19.021Z] [unzip] Entry: client/assets/provider-icons/auth_service_github.svg (compressed_size=466 bytes, uncompressed_size=838 bytes)
+[debug] [2025-07-23T21:28:19.021Z] [unzip] Processing entry: client/assets/provider-icons/auth_service_github.svg
+[debug] [2025-07-23T21:28:19.022Z] [unzip] else mkdir: /Users/mac/.cache/firebase/emulators/ui-v1.15.0/client/assets/provider-icons
+[debug] [2025-07-23T21:28:19.022Z] [unzip] deflating: /Users/mac/.cache/firebase/emulators/ui-v1.15.0/client/assets/provider-icons/auth_service_github.svg
+[debug] [2025-07-23T21:28:19.023Z] [unzip] Entry: client/assets/provider-icons/auth_service_mslive.svg (compressed_size=203 bytes, uncompressed_size=378 bytes)
+[debug] [2025-07-23T21:28:19.024Z] [unzip] Processing entry: client/assets/provider-icons/auth_service_mslive.svg
+[debug] [2025-07-23T21:28:19.024Z] [unzip] else mkdir: /Users/mac/.cache/firebase/emulators/ui-v1.15.0/client/assets/provider-icons
+[debug] [2025-07-23T21:28:19.024Z] [unzip] deflating: /Users/mac/.cache/firebase/emulators/ui-v1.15.0/client/assets/provider-icons/auth_service_mslive.svg
+[debug] [2025-07-23T21:28:19.025Z] [unzip] Entry: client/assets/provider-icons/auth_service_yahoo.svg (compressed_size=577 bytes, uncompressed_size=1182 bytes)
+[debug] [2025-07-23T21:28:19.026Z] [unzip] Processing entry: client/assets/provider-icons/auth_service_yahoo.svg
+[debug] [2025-07-23T21:28:19.026Z] [unzip] else mkdir: /Users/mac/.cache/firebase/emulators/ui-v1.15.0/client/assets/provider-icons
+[debug] [2025-07-23T21:28:19.026Z] [unzip] deflating: /Users/mac/.cache/firebase/emulators/ui-v1.15.0/client/assets/provider-icons/auth_service_yahoo.svg
+[debug] [2025-07-23T21:28:19.028Z] [unzip] Entry: client/assets/provider-icons/auth_service_twitter.svg (compressed_size=444 bytes, uncompressed_size=751 bytes)
+[debug] [2025-07-23T21:28:19.028Z] [unzip] Processing entry: client/assets/provider-icons/auth_service_twitter.svg
+[debug] [2025-07-23T21:28:19.028Z] [unzip] else mkdir: /Users/mac/.cache/firebase/emulators/ui-v1.15.0/client/assets/provider-icons
+[debug] [2025-07-23T21:28:19.028Z] [unzip] deflating: /Users/mac/.cache/firebase/emulators/ui-v1.15.0/client/assets/provider-icons/auth_service_twitter.svg
+[debug] [2025-07-23T21:28:19.030Z] [unzip] Entry: client/assets/provider-icons/auth_service_play_games.svg (compressed_size=565 bytes, uncompressed_size=1173 bytes)
+[debug] [2025-07-23T21:28:19.030Z] [unzip] Processing entry: client/assets/provider-icons/auth_service_play_games.svg
+[debug] [2025-07-23T21:28:19.030Z] [unzip] else mkdir: /Users/mac/.cache/firebase/emulators/ui-v1.15.0/client/assets/provider-icons
+[debug] [2025-07-23T21:28:19.030Z] [unzip] deflating: /Users/mac/.cache/firebase/emulators/ui-v1.15.0/client/assets/provider-icons/auth_service_play_games.svg
+[debug] [2025-07-23T21:28:19.032Z] [unzip] Entry: client/assets/provider-icons/auth_service_email.svg (compressed_size=228 bytes, uncompressed_size=326 bytes)
+[debug] [2025-07-23T21:28:19.032Z] [unzip] Processing entry: client/assets/provider-icons/auth_service_email.svg
+[debug] [2025-07-23T21:28:19.032Z] [unzip] else mkdir: /Users/mac/.cache/firebase/emulators/ui-v1.15.0/client/assets/provider-icons
+[debug] [2025-07-23T21:28:19.033Z] [unzip] deflating: /Users/mac/.cache/firebase/emulators/ui-v1.15.0/client/assets/provider-icons/auth_service_email.svg
+[debug] [2025-07-23T21:28:19.034Z] [unzip] Entry: client/assets/provider-icons/auth_service_google.svg (compressed_size=409 bytes, uncompressed_size=720 bytes)
+[debug] [2025-07-23T21:28:19.034Z] [unzip] Processing entry: client/assets/provider-icons/auth_service_google.svg
+[debug] [2025-07-23T21:28:19.034Z] [unzip] else mkdir: /Users/mac/.cache/firebase/emulators/ui-v1.15.0/client/assets/provider-icons
+[debug] [2025-07-23T21:28:19.035Z] [unzip] deflating: /Users/mac/.cache/firebase/emulators/ui-v1.15.0/client/assets/provider-icons/auth_service_google.svg
+[debug] [2025-07-23T21:28:19.036Z] [unzip] Entry: client/assets/provider-icons/auth_service_oidc.svg (compressed_size=414 bytes, uncompressed_size=858 bytes)
+[debug] [2025-07-23T21:28:19.036Z] [unzip] Processing entry: client/assets/provider-icons/auth_service_oidc.svg
+[debug] [2025-07-23T21:28:19.037Z] [unzip] else mkdir: /Users/mac/.cache/firebase/emulators/ui-v1.15.0/client/assets/provider-icons
+[debug] [2025-07-23T21:28:19.037Z] [unzip] deflating: /Users/mac/.cache/firebase/emulators/ui-v1.15.0/client/assets/provider-icons/auth_service_oidc.svg
+[debug] [2025-07-23T21:28:19.038Z] [unzip] Entry: client/browserconfig.xml (compressed_size=491 bytes, uncompressed_size=822 bytes)
+[debug] [2025-07-23T21:28:19.039Z] [unzip] Processing entry: client/browserconfig.xml
+[debug] [2025-07-23T21:28:19.039Z] [unzip] else mkdir: /Users/mac/.cache/firebase/emulators/ui-v1.15.0/client
+[debug] [2025-07-23T21:28:19.039Z] [unzip] deflating: /Users/mac/.cache/firebase/emulators/ui-v1.15.0/client/browserconfig.xml
+[debug] [2025-07-23T21:28:19.040Z] [unzip] Entry: client/favicon-32x32.png (compressed_size=475 bytes, uncompressed_size=475 bytes)
+[debug] [2025-07-23T21:28:19.041Z] [unzip] Processing entry: client/favicon-32x32.png
+[debug] [2025-07-23T21:28:19.041Z] [unzip] else mkdir: /Users/mac/.cache/firebase/emulators/ui-v1.15.0/client
+[debug] [2025-07-23T21:28:19.041Z] [unzip] Writing file: /Users/mac/.cache/firebase/emulators/ui-v1.15.0/client/favicon-32x32.png
+[debug] [2025-07-23T21:28:19.042Z] [unzip] Entry: server/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2025-07-23T21:28:19.042Z] [unzip] Processing entry: server/
+[debug] [2025-07-23T21:28:19.042Z] [unzip] mkdir: /Users/mac/.cache/firebase/emulators/ui-v1.15.0/server/
+[debug] [2025-07-23T21:28:19.042Z] [unzip] Entry: server/server.mjs.map (compressed_size=217845 bytes, uncompressed_size=944978 bytes)
+[debug] [2025-07-23T21:28:19.042Z] [unzip] Processing entry: server/server.mjs.map
+[debug] [2025-07-23T21:28:19.042Z] [unzip] else mkdir: /Users/mac/.cache/firebase/emulators/ui-v1.15.0/server
+[debug] [2025-07-23T21:28:19.043Z] [unzip] deflating: /Users/mac/.cache/firebase/emulators/ui-v1.15.0/server/server.mjs.map
+[debug] [2025-07-23T21:28:19.055Z] [unzip] Entry: server/server.mjs (compressed_size=276407 bytes, uncompressed_size=933701 bytes)
+[debug] [2025-07-23T21:28:19.055Z] [unzip] Processing entry: server/server.mjs
+[debug] [2025-07-23T21:28:19.055Z] [unzip] else mkdir: /Users/mac/.cache/firebase/emulators/ui-v1.15.0/server
+[debug] [2025-07-23T21:28:19.055Z] [unzip] deflating: /Users/mac/.cache/firebase/emulators/ui-v1.15.0/server/server.mjs
+[info] i  functions: Watching "/Users/mac/Desktop/jobmatch-frontend/functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"/Users/mac/Desktop/jobmatch-frontend/functions\" for Cloud Functions..."}}
+[debug] [2025-07-23T21:28:19.076Z] Validating nodejs source
+[debug] [2025-07-23T21:28:22.436Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "build": "echo 'Build skipped' || exit 0",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "22"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "firebase-admin": "^12.7.0",
+    "firebase-functions": "^6.4.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2025-07-23T21:28:22.437Z] Building nodejs source
+[debug] [2025-07-23T21:28:22.437Z] Failed to find version of module node: reached end of search path /Users/mac/Desktop/jobmatch-frontend/functions/node_modules
+[info] ✔  functions: Using node@22 from host. 
+[debug] [2025-07-23T21:28:22.441Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-07-23T21:28:22.454Z] Found firebase-functions binary at '/Users/mac/Desktop/jobmatch-frontend/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8964
+
+[debug] [2025-07-23T21:28:24.310Z] Got response from /__/functions.yaml {"endpoints":{"api":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[],"extensions":{}}
+[info] ✔  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[info] ✔  functions[us-central1-api]: http function initialized (http://127.0.0.1:5001/jobmatch-176a7/us-central1/api). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/jobmatch-176a7/us-central1/api)."}}
+[debug] [2025-07-23T21:28:28.359Z] Could not find VSCode notification endpoint: FetchError: request to http://localhost:40001/vscode/notify failed, reason: . If you are not running the Firebase Data Connect VSCode extension, this is expected and not an issue.
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://127.0.0.1:4000/               │
+└─────────────────────────────────────────────────────────────┘
+
+┌───────────┬────────────────┬─────────────────────────────────┐
+│ Emulator  │ Host:Port      │ View in Emulator UI             │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Functions │ 127.0.0.1:5001 │ http://127.0.0.1:4000/functions │
+└───────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub host: 127.0.0.1 port: 4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2025-07-23T21:29:37.591Z] [work-queue] {"queuedWork":["/jobmatch-176a7/us-central1/api/jobs-2025-07-23T21:29:37.591Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2025-07-23T21:29:37.592Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/jobmatch-176a7/us-central1/api/jobs-2025-07-23T21:29:37.591Z"],"workRunningCount":1}
+[debug] [2025-07-23T21:29:37.593Z] Accepted request GET /jobmatch-176a7/us-central1/api/jobs --> us-central1-api
+[debug] [2025-07-23T21:29:37.598Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2025-07-23T21:29:37.599Z] [functions] Got req.url=/jobmatch-176a7/us-central1/api/jobs, mapping to path=/jobs {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/jobmatch-176a7/us-central1/api/jobs, mapping to path=/jobs"}}
+[debug] [2025-07-23T21:29:37.607Z] [worker-pool] addWorker(us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-api)"}}
+[debug] [2025-07-23T21:29:37.608Z] [worker-pool] Adding worker with key us-central1-api, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-api, total=1"}}
+[debug] [2025-07-23T21:29:39.407Z] [runtime-status] [39225] Resolved module firebase-admin {"declared":true,"installed":true,"version":"12.7.0","resolution":"/Users/mac/Desktop/jobmatch-frontend/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [39225] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"12.7.0\",\"resolution\":\"/Users/mac/Desktop/jobmatch-frontend/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2025-07-23T21:29:39.408Z] [runtime-status] [39225] Resolved module firebase-functions {"declared":true,"installed":true,"version":"6.4.0","resolution":"/Users/mac/Desktop/jobmatch-frontend/functions/node_modules/firebase-functions/lib/v2/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [39225] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"6.4.0\",\"resolution\":\"/Users/mac/Desktop/jobmatch-frontend/functions/node_modules/firebase-functions/lib/v2/index.js\"}"}}
+[debug] [2025-07-23T21:29:39.408Z] [runtime-status] [39225] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [39225] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2025-07-23T21:29:39.410Z] [runtime-status] [39225] Resolved module firebase-functions {"declared":true,"installed":true,"version":"6.4.0","resolution":"/Users/mac/Desktop/jobmatch-frontend/functions/node_modules/firebase-functions/lib/v2/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [39225] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"6.4.0\",\"resolution\":\"/Users/mac/Desktop/jobmatch-frontend/functions/node_modules/firebase-functions/lib/v2/index.js\"}"}}
+[debug] [2025-07-23T21:29:40.145Z] [runtime-status] [39225] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [39225] Checked functions.config() {\"config\":{}}"}}
+[debug] [2025-07-23T21:29:40.146Z] [runtime-status] [39225] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"6.4.0","resolution":"/Users/mac/Desktop/jobmatch-frontend/functions/node_modules/firebase-functions/lib/v2/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [39225] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"6.4.0\",\"resolution\":\"/Users/mac/Desktop/jobmatch-frontend/functions/node_modules/firebase-functions/lib/v2/index.js\"}}"}}
+[debug] [2025-07-23T21:29:40.147Z] [runtime-status] [39225] Resolved module firebase-functions {"declared":true,"installed":true,"version":"6.4.0","resolution":"/Users/mac/Desktop/jobmatch-frontend/functions/node_modules/firebase-functions/lib/v2/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [39225] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"6.4.0\",\"resolution\":\"/Users/mac/Desktop/jobmatch-frontend/functions/node_modules/firebase-functions/lib/v2/index.js\"}"}}
+[debug] [2025-07-23T21:29:40.155Z] [runtime-status] [39225] Resolved module firebase-admin {"declared":true,"installed":true,"version":"12.7.0","resolution":"/Users/mac/Desktop/jobmatch-frontend/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [39225] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"12.7.0\",\"resolution\":\"/Users/mac/Desktop/jobmatch-frontend/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2025-07-23T21:29:40.160Z] [runtime-status] [39225] Resolved module firebase-functions {"declared":true,"installed":true,"version":"6.4.0","resolution":"/Users/mac/Desktop/jobmatch-frontend/functions/node_modules/firebase-functions/lib/v2/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [39225] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"6.4.0\",\"resolution\":\"/Users/mac/Desktop/jobmatch-frontend/functions/node_modules/firebase-functions/lib/v2/index.js\"}"}}
+[debug] [2025-07-23T21:29:40.161Z] [runtime-status] [39225] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"12.7.0","resolution":"/Users/mac/Desktop/jobmatch-frontend/functions/node_modules/firebase-admin/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [39225] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"12.7.0\",\"resolution\":\"/Users/mac/Desktop/jobmatch-frontend/functions/node_modules/firebase-admin/lib/index.js\"}}"}}
+[debug] [2025-07-23T21:29:40.404Z] [runtime-status] [39225] Functions runtime initialized. {"cwd":"/Users/mac/Desktop/jobmatch-frontend/functions","node_version":"22.17.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [39225] Functions runtime initialized. {\"cwd\":\"/Users/mac/Desktop/jobmatch-frontend/functions\",\"node_version\":\"22.17.0\"}"}}
+[debug] [2025-07-23T21:29:40.405Z] [runtime-status] [39225] Listening to port: /var/folders/jd/k53k5nc91w139fg3vgcb9yhh0000gn/T/fire_emu_46faeaba96935963.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [39225] Listening to port: /var/folders/jd/k53k5nc91w139fg3vgcb9yhh0000gn/T/fire_emu_46faeaba96935963.sock"}}
+[debug] [2025-07-23T21:29:40.466Z] [worker-us-central1-api-c6af276a-ace5-4596-ad7c-646001681e34]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-c6af276a-ace5-4596-ad7c-646001681e34]: IDLE"}}
+[debug] [2025-07-23T21:29:40.467Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[info] i  functions: Beginning execution of "us-central1-api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"us-central1-api\""}}
+[debug] [2025-07-23T21:29:40.468Z] [worker-us-central1-api-c6af276a-ace5-4596-ad7c-646001681e34]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-c6af276a-ace5-4596-ad7c-646001681e34]: BUSY"}}
+[debug] [2025-07-23T21:29:40.483Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-api" in 15.142248ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"us-central1-api\" in 15.142248ms"}}
+[debug] [2025-07-23T21:29:40.484Z] [worker-us-central1-api-c6af276a-ace5-4596-ad7c-646001681e34]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-c6af276a-ace5-4596-ad7c-646001681e34]: IDLE"}}
+[debug] [2025-07-23T21:29:40.484Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2025-07-23T21:29:40.485Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2025-07-23T21:29:40.485Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2025-07-23T21:30:10.702Z] [work-queue] {"queuedWork":["/jobmatch-176a7/us-central1/api/jobs-2025-07-23T21:30:10.701Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2025-07-23T21:30:10.702Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/jobmatch-176a7/us-central1/api/jobs-2025-07-23T21:30:10.701Z"],"workRunningCount":1}
+[debug] [2025-07-23T21:30:10.702Z] Accepted request POST /jobmatch-176a7/us-central1/api/jobs --> us-central1-api
+[debug] [2025-07-23T21:30:10.707Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2025-07-23T21:30:10.708Z] [functions] Got req.url=/jobmatch-176a7/us-central1/api/jobs, mapping to path=/jobs {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/jobmatch-176a7/us-central1/api/jobs, mapping to path=/jobs"}}
+[debug] [2025-07-23T21:30:10.708Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[info] i  functions: Beginning execution of "us-central1-api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"us-central1-api\""}}
+[debug] [2025-07-23T21:30:10.709Z] [worker-us-central1-api-c6af276a-ace5-4596-ad7c-646001681e34]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-c6af276a-ace5-4596-ad7c-646001681e34]: BUSY"}}
+[debug] [2025-07-23T21:30:10.742Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-api" in 33.387269ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"us-central1-api\" in 33.387269ms"}}
+[debug] [2025-07-23T21:30:10.743Z] [worker-us-central1-api-c6af276a-ace5-4596-ad7c-646001681e34]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-c6af276a-ace5-4596-ad7c-646001681e34]: IDLE"}}
+[debug] [2025-07-23T21:30:10.743Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2025-07-23T21:30:10.743Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2025-07-23T21:30:10.744Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2025-07-23T21:30:22.390Z] [work-queue] {"queuedWork":["/jobmatch-176a7/us-central1/api/jobs-2025-07-23T21:30:22.390Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2025-07-23T21:30:22.390Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/jobmatch-176a7/us-central1/api/jobs-2025-07-23T21:30:22.390Z"],"workRunningCount":1}
+[debug] [2025-07-23T21:30:22.390Z] Accepted request GET /jobmatch-176a7/us-central1/api/jobs --> us-central1-api
+[debug] [2025-07-23T21:30:22.395Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2025-07-23T21:30:22.395Z] [functions] Got req.url=/jobmatch-176a7/us-central1/api/jobs, mapping to path=/jobs {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/jobmatch-176a7/us-central1/api/jobs, mapping to path=/jobs"}}
+[debug] [2025-07-23T21:30:22.395Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[info] i  functions: Beginning execution of "us-central1-api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"us-central1-api\""}}
+[debug] [2025-07-23T21:30:22.396Z] [worker-us-central1-api-c6af276a-ace5-4596-ad7c-646001681e34]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-c6af276a-ace5-4596-ad7c-646001681e34]: BUSY"}}
+[debug] [2025-07-23T21:30:22.401Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-api" in 5.671622ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"us-central1-api\" in 5.671622ms"}}
+[debug] [2025-07-23T21:30:22.402Z] [worker-us-central1-api-c6af276a-ace5-4596-ad7c-646001681e34]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-c6af276a-ace5-4596-ad7c-646001681e34]: IDLE"}}
+[debug] [2025-07-23T21:30:22.403Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2025-07-23T21:30:22.403Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2025-07-23T21:30:22.403Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2025-07-23T21:30:22.450Z] [work-queue] {"queuedWork":["/jobmatch-176a7/us-central1/api/jobs-2025-07-23T21:30:22.450Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2025-07-23T21:30:22.451Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/jobmatch-176a7/us-central1/api/jobs-2025-07-23T21:30:22.450Z"],"workRunningCount":1}
+[debug] [2025-07-23T21:30:22.451Z] Accepted request POST /jobmatch-176a7/us-central1/api/jobs --> us-central1-api
+[debug] [2025-07-23T21:30:22.455Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2025-07-23T21:30:22.455Z] [functions] Got req.url=/jobmatch-176a7/us-central1/api/jobs, mapping to path=/jobs {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/jobmatch-176a7/us-central1/api/jobs, mapping to path=/jobs"}}
+[debug] [2025-07-23T21:30:22.455Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[info] i  functions: Beginning execution of "us-central1-api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"us-central1-api\""}}
+[debug] [2025-07-23T21:30:22.456Z] [worker-us-central1-api-c6af276a-ace5-4596-ad7c-646001681e34]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-c6af276a-ace5-4596-ad7c-646001681e34]: BUSY"}}
+[debug] [2025-07-23T21:30:22.461Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-api" in 5.598057ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"us-central1-api\" in 5.598057ms"}}
+[debug] [2025-07-23T21:30:22.462Z] [worker-us-central1-api-c6af276a-ace5-4596-ad7c-646001681e34]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-c6af276a-ace5-4596-ad7c-646001681e34]: IDLE"}}
+[debug] [2025-07-23T21:30:22.463Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2025-07-23T21:30:22.463Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2025-07-23T21:30:22.463Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2025-07-23T21:30:22.512Z] [work-queue] {"queuedWork":["/jobmatch-176a7/us-central1/api/jobs/1-2025-07-23T21:30:22.512Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2025-07-23T21:30:22.512Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/jobmatch-176a7/us-central1/api/jobs/1-2025-07-23T21:30:22.512Z"],"workRunningCount":1}
+[debug] [2025-07-23T21:30:22.512Z] Accepted request DELETE /jobmatch-176a7/us-central1/api/jobs/1 --> us-central1-api
+[debug] [2025-07-23T21:30:22.516Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2025-07-23T21:30:22.517Z] [functions] Got req.url=/jobmatch-176a7/us-central1/api/jobs/1, mapping to path=/jobs/1 {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/jobmatch-176a7/us-central1/api/jobs/1, mapping to path=/jobs/1"}}
+[debug] [2025-07-23T21:30:22.517Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[info] i  functions: Beginning execution of "us-central1-api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"us-central1-api\""}}
+[debug] [2025-07-23T21:30:22.518Z] [worker-us-central1-api-c6af276a-ace5-4596-ad7c-646001681e34]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-c6af276a-ace5-4596-ad7c-646001681e34]: BUSY"}}
+[debug] [2025-07-23T21:30:22.524Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-api" in 6.135302ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"us-central1-api\" in 6.135302ms"}}
+[debug] [2025-07-23T21:30:22.525Z] [worker-us-central1-api-c6af276a-ace5-4596-ad7c-646001681e34]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-c6af276a-ace5-4596-ad7c-646001681e34]: IDLE"}}
+[debug] [2025-07-23T21:30:22.525Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2025-07-23T21:30:22.525Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2025-07-23T21:30:22.525Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2025-07-23T21:34:45.662Z] [work-queue] {"queuedWork":["/jobmatch-176a7/us-central1/api/jobs-2025-07-23T21:34:45.662Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2025-07-23T21:34:45.662Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/jobmatch-176a7/us-central1/api/jobs-2025-07-23T21:34:45.662Z"],"workRunningCount":1}
+[debug] [2025-07-23T21:34:45.662Z] Accepted request GET /jobmatch-176a7/us-central1/api/jobs --> us-central1-api
+[debug] [2025-07-23T21:34:45.666Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2025-07-23T21:34:45.666Z] [functions] Got req.url=/jobmatch-176a7/us-central1/api/jobs, mapping to path=/jobs {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/jobmatch-176a7/us-central1/api/jobs, mapping to path=/jobs"}}
+[debug] [2025-07-23T21:34:45.666Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[info] i  functions: Beginning execution of "us-central1-api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"us-central1-api\""}}
+[debug] [2025-07-23T21:34:45.667Z] [worker-us-central1-api-c6af276a-ace5-4596-ad7c-646001681e34]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-c6af276a-ace5-4596-ad7c-646001681e34]: BUSY"}}
+[debug] [2025-07-23T21:34:45.672Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-api" in 5.37073ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"us-central1-api\" in 5.37073ms"}}
+[debug] [2025-07-23T21:34:45.673Z] [worker-us-central1-api-c6af276a-ace5-4596-ad7c-646001681e34]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-c6af276a-ace5-4596-ad7c-646001681e34]: IDLE"}}
+[debug] [2025-07-23T21:34:45.673Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2025-07-23T21:34:45.673Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2025-07-23T21:34:45.673Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2025-07-23T21:34:45.722Z] [work-queue] {"queuedWork":["/jobmatch-176a7/us-central1/api/jobs-2025-07-23T21:34:45.722Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2025-07-23T21:34:45.722Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/jobmatch-176a7/us-central1/api/jobs-2025-07-23T21:34:45.722Z"],"workRunningCount":1}
+[debug] [2025-07-23T21:34:45.722Z] Accepted request POST /jobmatch-176a7/us-central1/api/jobs --> us-central1-api
+[debug] [2025-07-23T21:34:45.726Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2025-07-23T21:34:45.726Z] [functions] Got req.url=/jobmatch-176a7/us-central1/api/jobs, mapping to path=/jobs {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/jobmatch-176a7/us-central1/api/jobs, mapping to path=/jobs"}}
+[debug] [2025-07-23T21:34:45.726Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[info] i  functions: Beginning execution of "us-central1-api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"us-central1-api\""}}
+[debug] [2025-07-23T21:34:45.727Z] [worker-us-central1-api-c6af276a-ace5-4596-ad7c-646001681e34]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-c6af276a-ace5-4596-ad7c-646001681e34]: BUSY"}}
+[debug] [2025-07-23T21:34:45.731Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-api" in 4.04401ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"us-central1-api\" in 4.04401ms"}}
+[debug] [2025-07-23T21:34:45.731Z] [worker-us-central1-api-c6af276a-ace5-4596-ad7c-646001681e34]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-c6af276a-ace5-4596-ad7c-646001681e34]: IDLE"}}
+[debug] [2025-07-23T21:34:45.732Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2025-07-23T21:34:45.732Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2025-07-23T21:34:45.732Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2025-07-23T21:34:45.780Z] [work-queue] {"queuedWork":["/jobmatch-176a7/us-central1/api/jobs/1-2025-07-23T21:34:45.779Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2025-07-23T21:34:45.780Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/jobmatch-176a7/us-central1/api/jobs/1-2025-07-23T21:34:45.779Z"],"workRunningCount":1}
+[debug] [2025-07-23T21:34:45.780Z] Accepted request DELETE /jobmatch-176a7/us-central1/api/jobs/1 --> us-central1-api
+[debug] [2025-07-23T21:34:45.783Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2025-07-23T21:34:45.784Z] [functions] Got req.url=/jobmatch-176a7/us-central1/api/jobs/1, mapping to path=/jobs/1 {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/jobmatch-176a7/us-central1/api/jobs/1, mapping to path=/jobs/1"}}
+[debug] [2025-07-23T21:34:45.784Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[info] i  functions: Beginning execution of "us-central1-api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"us-central1-api\""}}
+[debug] [2025-07-23T21:34:45.785Z] [worker-us-central1-api-c6af276a-ace5-4596-ad7c-646001681e34]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-c6af276a-ace5-4596-ad7c-646001681e34]: BUSY"}}
+[debug] [2025-07-23T21:34:45.789Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-api" in 5.167079ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"us-central1-api\" in 5.167079ms"}}
+[debug] [2025-07-23T21:34:45.790Z] [worker-us-central1-api-c6af276a-ace5-4596-ad7c-646001681e34]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-c6af276a-ace5-4596-ad7c-646001681e34]: IDLE"}}
+[debug] [2025-07-23T21:34:45.791Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2025-07-23T21:34:45.791Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2025-07-23T21:34:45.792Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2025-07-23T21:37:39.750Z] [work-queue] {"queuedWork":["/jobmatch-176a7/us-central1/api/jobs-2025-07-23T21:37:39.750Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2025-07-23T21:37:39.751Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/jobmatch-176a7/us-central1/api/jobs-2025-07-23T21:37:39.750Z"],"workRunningCount":1}
+[debug] [2025-07-23T21:37:39.751Z] Accepted request GET /jobmatch-176a7/us-central1/api/jobs --> us-central1-api
+[debug] [2025-07-23T21:37:39.754Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2025-07-23T21:37:39.755Z] [functions] Got req.url=/jobmatch-176a7/us-central1/api/jobs, mapping to path=/jobs {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/jobmatch-176a7/us-central1/api/jobs, mapping to path=/jobs"}}
+[debug] [2025-07-23T21:37:39.755Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[info] i  functions: Beginning execution of "us-central1-api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"us-central1-api\""}}
+[debug] [2025-07-23T21:37:39.756Z] [worker-us-central1-api-c6af276a-ace5-4596-ad7c-646001681e34]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-c6af276a-ace5-4596-ad7c-646001681e34]: BUSY"}}
+[debug] [2025-07-23T21:37:39.761Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-api" in 5.569165ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"us-central1-api\" in 5.569165ms"}}
+[debug] [2025-07-23T21:37:39.762Z] [worker-us-central1-api-c6af276a-ace5-4596-ad7c-646001681e34]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-c6af276a-ace5-4596-ad7c-646001681e34]: IDLE"}}
+[debug] [2025-07-23T21:37:39.762Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2025-07-23T21:37:39.763Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2025-07-23T21:37:39.763Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2025-07-23T21:37:39.808Z] [work-queue] {"queuedWork":["/jobmatch-176a7/us-central1/api/jobs-2025-07-23T21:37:39.808Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2025-07-23T21:37:39.808Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/jobmatch-176a7/us-central1/api/jobs-2025-07-23T21:37:39.808Z"],"workRunningCount":1}
+[debug] [2025-07-23T21:37:39.808Z] Accepted request POST /jobmatch-176a7/us-central1/api/jobs --> us-central1-api
+[debug] [2025-07-23T21:37:39.812Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2025-07-23T21:37:39.813Z] [functions] Got req.url=/jobmatch-176a7/us-central1/api/jobs, mapping to path=/jobs {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/jobmatch-176a7/us-central1/api/jobs, mapping to path=/jobs"}}
+[debug] [2025-07-23T21:37:39.813Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[info] i  functions: Beginning execution of "us-central1-api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"us-central1-api\""}}
+[debug] [2025-07-23T21:37:39.814Z] [worker-us-central1-api-c6af276a-ace5-4596-ad7c-646001681e34]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-c6af276a-ace5-4596-ad7c-646001681e34]: BUSY"}}
+[debug] [2025-07-23T21:37:39.818Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-api" in 5.06965ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"us-central1-api\" in 5.06965ms"}}
+[debug] [2025-07-23T21:37:39.820Z] [worker-us-central1-api-c6af276a-ace5-4596-ad7c-646001681e34]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-c6af276a-ace5-4596-ad7c-646001681e34]: IDLE"}}
+[debug] [2025-07-23T21:37:39.820Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2025-07-23T21:37:39.820Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2025-07-23T21:37:39.821Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2025-07-23T21:37:39.869Z] [work-queue] {"queuedWork":["/jobmatch-176a7/us-central1/api/jobs/1-2025-07-23T21:37:39.869Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2025-07-23T21:37:39.869Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/jobmatch-176a7/us-central1/api/jobs/1-2025-07-23T21:37:39.869Z"],"workRunningCount":1}
+[debug] [2025-07-23T21:37:39.869Z] Accepted request DELETE /jobmatch-176a7/us-central1/api/jobs/1 --> us-central1-api
+[debug] [2025-07-23T21:37:39.874Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2025-07-23T21:37:39.875Z] [functions] Got req.url=/jobmatch-176a7/us-central1/api/jobs/1, mapping to path=/jobs/1 {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/jobmatch-176a7/us-central1/api/jobs/1, mapping to path=/jobs/1"}}
+[debug] [2025-07-23T21:37:39.875Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[info] i  functions: Beginning execution of "us-central1-api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"us-central1-api\""}}
+[debug] [2025-07-23T21:37:39.876Z] [worker-us-central1-api-c6af276a-ace5-4596-ad7c-646001681e34]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-c6af276a-ace5-4596-ad7c-646001681e34]: BUSY"}}
+[debug] [2025-07-23T21:37:39.880Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-api" in 4.973255ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"us-central1-api\" in 4.973255ms"}}
+[debug] [2025-07-23T21:37:39.881Z] [worker-us-central1-api-c6af276a-ace5-4596-ad7c-646001681e34]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-c6af276a-ace5-4596-ad7c-646001681e34]: IDLE"}}
+[debug] [2025-07-23T21:37:39.882Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2025-07-23T21:37:39.882Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2025-07-23T21:37:39.882Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2025-07-23T21:37:59.790Z] [work-queue] {"queuedWork":["/jobmatch-176a7/us-central1/api/jobs-2025-07-23T21:37:59.790Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2025-07-23T21:37:59.790Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/jobmatch-176a7/us-central1/api/jobs-2025-07-23T21:37:59.790Z"],"workRunningCount":1}
+[debug] [2025-07-23T21:37:59.790Z] Accepted request GET /jobmatch-176a7/us-central1/api/jobs --> us-central1-api
+[debug] [2025-07-23T21:37:59.793Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2025-07-23T21:37:59.793Z] [functions] Got req.url=/jobmatch-176a7/us-central1/api/jobs, mapping to path=/jobs {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/jobmatch-176a7/us-central1/api/jobs, mapping to path=/jobs"}}
+[debug] [2025-07-23T21:37:59.793Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[info] i  functions: Beginning execution of "us-central1-api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"us-central1-api\""}}
+[debug] [2025-07-23T21:37:59.794Z] [worker-us-central1-api-c6af276a-ace5-4596-ad7c-646001681e34]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-c6af276a-ace5-4596-ad7c-646001681e34]: BUSY"}}
+[debug] [2025-07-23T21:37:59.797Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-api" in 3.333867ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"us-central1-api\" in 3.333867ms"}}
+[debug] [2025-07-23T21:37:59.797Z] [worker-us-central1-api-c6af276a-ace5-4596-ad7c-646001681e34]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-c6af276a-ace5-4596-ad7c-646001681e34]: IDLE"}}
+[debug] [2025-07-23T21:37:59.798Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2025-07-23T21:37:59.798Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2025-07-23T21:37:59.798Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2025-07-23T21:38:07.074Z] [work-queue] {"queuedWork":["/jobmatch-176a7/us-central1/api/jobs-2025-07-23T21:38:07.074Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2025-07-23T21:38:07.074Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/jobmatch-176a7/us-central1/api/jobs-2025-07-23T21:38:07.074Z"],"workRunningCount":1}
+[debug] [2025-07-23T21:38:07.074Z] Accepted request POST /jobmatch-176a7/us-central1/api/jobs --> us-central1-api
+[debug] [2025-07-23T21:38:07.077Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2025-07-23T21:38:07.077Z] [functions] Got req.url=/jobmatch-176a7/us-central1/api/jobs, mapping to path=/jobs {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/jobmatch-176a7/us-central1/api/jobs, mapping to path=/jobs"}}
+[debug] [2025-07-23T21:38:07.077Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[info] i  functions: Beginning execution of "us-central1-api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"us-central1-api\""}}
+[debug] [2025-07-23T21:38:07.078Z] [worker-us-central1-api-c6af276a-ace5-4596-ad7c-646001681e34]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-c6af276a-ace5-4596-ad7c-646001681e34]: BUSY"}}
+[debug] [2025-07-23T21:38:07.081Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-api" in 3.617023ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"us-central1-api\" in 3.617023ms"}}
+[debug] [2025-07-23T21:38:07.082Z] [worker-us-central1-api-c6af276a-ace5-4596-ad7c-646001681e34]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-c6af276a-ace5-4596-ad7c-646001681e34]: IDLE"}}
+[debug] [2025-07-23T21:38:07.082Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2025-07-23T21:38:07.082Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2025-07-23T21:38:07.082Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2025-07-23T21:38:14.313Z] [work-queue] {"queuedWork":["/jobmatch-176a7/us-central1/api/jobs/1-2025-07-23T21:38:14.313Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2025-07-23T21:38:14.313Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/jobmatch-176a7/us-central1/api/jobs/1-2025-07-23T21:38:14.313Z"],"workRunningCount":1}
+[debug] [2025-07-23T21:38:14.313Z] Accepted request DELETE /jobmatch-176a7/us-central1/api/jobs/1 --> us-central1-api
+[debug] [2025-07-23T21:38:14.316Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2025-07-23T21:38:14.316Z] [functions] Got req.url=/jobmatch-176a7/us-central1/api/jobs/1, mapping to path=/jobs/1 {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/jobmatch-176a7/us-central1/api/jobs/1, mapping to path=/jobs/1"}}
+[debug] [2025-07-23T21:38:14.316Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[info] i  functions: Beginning execution of "us-central1-api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"us-central1-api\""}}
+[debug] [2025-07-23T21:38:14.317Z] [worker-us-central1-api-c6af276a-ace5-4596-ad7c-646001681e34]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-c6af276a-ace5-4596-ad7c-646001681e34]: BUSY"}}
+[debug] [2025-07-23T21:38:14.320Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-api" in 3.832728ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"us-central1-api\" in 3.832728ms"}}
+[debug] [2025-07-23T21:38:14.321Z] [worker-us-central1-api-c6af276a-ace5-4596-ad7c-646001681e34]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-c6af276a-ace5-4596-ad7c-646001681e34]: IDLE"}}
+[debug] [2025-07-23T21:38:14.321Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2025-07-23T21:38:14.321Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2025-07-23T21:38:14.321Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2025-07-23T21:38:31.090Z] [work-queue] {"queuedWork":["/jobmatch-176a7/us-central1/api/jobs-2025-07-23T21:38:31.090Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2025-07-23T21:38:31.090Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/jobmatch-176a7/us-central1/api/jobs-2025-07-23T21:38:31.090Z"],"workRunningCount":1}
+[debug] [2025-07-23T21:38:31.091Z] Accepted request POST /jobmatch-176a7/us-central1/api/jobs --> us-central1-api
+[debug] [2025-07-23T21:38:31.093Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2025-07-23T21:38:31.093Z] [functions] Got req.url=/jobmatch-176a7/us-central1/api/jobs, mapping to path=/jobs {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/jobmatch-176a7/us-central1/api/jobs, mapping to path=/jobs"}}
+[debug] [2025-07-23T21:38:31.093Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[info] i  functions: Beginning execution of "us-central1-api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"us-central1-api\""}}
+[debug] [2025-07-23T21:38:31.094Z] [worker-us-central1-api-c6af276a-ace5-4596-ad7c-646001681e34]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-c6af276a-ace5-4596-ad7c-646001681e34]: BUSY"}}
+[debug] [2025-07-23T21:38:31.097Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-api" in 4.208199ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"us-central1-api\" in 4.208199ms"}}
+[debug] [2025-07-23T21:38:31.099Z] [worker-us-central1-api-c6af276a-ace5-4596-ad7c-646001681e34]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-c6af276a-ace5-4596-ad7c-646001681e34]: IDLE"}}
+[debug] [2025-07-23T21:38:31.099Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2025-07-23T21:38:31.099Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2025-07-23T21:38:31.099Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
